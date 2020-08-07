@@ -1,3 +1,5 @@
+Windows Powershell Commands
+
 # Run to check the bloatware in your Win10 system
 DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
 
