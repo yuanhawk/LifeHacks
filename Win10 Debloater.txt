@@ -1,0 +1,107 @@
+# Run to check the bloatware in your Win10 system
+DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
+
+# Copy to remove all bloatware below
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AppUp.IntelGraphicsExperience_1.100.2727.0_neutral_~_8j3eq9eme6ctt
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:ICEpower.AudioWizard_1.5.28.0_neutral_~_dxp88312j1fgj
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.25.20211.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.DesktopAppInstaller_2019.125.2243.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:DISM /Online /Remove-ProvisionedAppxPackage /PackageName : Microsoft.Getstarted_7.3.20251.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.HEIFImageExtension_1.0.13472.0_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Messaging_2019.125.32.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Microsoft3DViewer_5.1902.20012.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.1901.1141.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.2.11280.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_3.1.53.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MixedReality.Portal_2000.19010.1151.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MSPaint_2019.213.1858.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Office.OneNote_16001.11126.20076.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OneConnect_5.1902.361.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2019.123.2346.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Print3D_3.3.311.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ScreenSketch_2018.1214.231.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.SkypeApp_14.35.152.0_neutral_~_kzf8qxf38zg5c
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.StorePurchaseApp_11811.1001.1813.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.VP9VideoExtensions_1.0.13333.0_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Wallet_2.4.18324.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WebMediaExtensions_1.0.13321.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WebpImageExtension_1.0.12821.0_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.Photos_2019.18114.19418.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2019.105.629.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCalculator_2019.105.612.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2019.926.30.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.11029.20108.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2019.226.2324.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2019.108.627.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2019.105.618.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsStore_11811.1001.1813.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.23.28002.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxApp_48.48.7001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.32.17005.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_2.26.14003.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.50.6001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.17.29001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_2018.1128.231.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_2019.18111.17311.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.18111.17311.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:NVIDIACorp.NVIDIAControlPanel_8.1.956.0_x64__56jybvy8sckqj
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:RealtekSemiconductorCorp.RealtekAudioControl_1.1.137.0_neutral_~_dt26b99r8h8gj
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.1706.13331.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_7.3.20251.0_neutral_~_8wekyb3d8bbwe
+
+# Uninstall 3D Builder:
+Get-AppxPackage *3dbuilder* | Remove-AppxPackage
+# Uninstall Alarms and Clock:
+Get-AppxPackage *windowsalarms* | Remove-AppxPackage
+# Uninstall Calculator:
+Get-AppxPackage *windowscalculator* | Remove-AppxPackage
+# Uninstall Calendar and Mail:
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
+# Uninstall Camera:
+Get-AppxPackage *windowscamera* | Remove-AppxPackage
+# Uninstall Contact Support:
+This app can't be removed.
+# Uninstall Cortana:
+Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
+# Uninstall Get Office:
+Get-AppxPackage *officehub* | Remove-AppxPackage
+# Uninstall Get Skype:
+Get-AppxPackage *skypeapp* | Remove-AppxPackage
+# Uninstall Get Started:
+Get-AppxPackage *getstarted* | Remove-AppxPackage
+# Uninstall Groove Music:
+Get-AppxPackage *zunemusic* | Remove-AppxPackage
+# Uninstall Maps:
+Get-AppxPackage *windowsmaps* | Remove-AppxPackage
+# Uninstall Microsoft Edge:
+Takeown /F Microsoft.MicrosoftEdge_44.18362.449.0_neutral__8wekyb3d8bbwe   
+icacls C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe /grant administrators:f
+DEL MicrosoftEdge.exe & MicrosoftPdfReader.exe
+# Uninstall Microsoft Solitaire Collection:
+Get-AppxPackage *solitairecollection* | Remove-AppxPackage
+# Uninstall Money:
+Get-AppxPackage *bingfinance* | Remove-AppxPackage
+# Uninstall Movies & TV:
+Get-AppxPackage *zunevideo* | Remove-AppxPackage
+# Uninstall News:
+Get-AppxPackage *bingnews* | Remove-AppxPackage
+# Uninstall OneNote:
+Get-AppxPackage *onenote* | Remove-AppxPackage
+# Uninstall People:
+This app can't be removed.
+# Uninstall Phone Companion:
+Get-AppxPackage *windowsphone* | Remove-AppxPackage
+# Uninstall Photos:
+Get-AppxPackage *photos* | Remove-AppxPackage
+# Uninstall Store:
+Get-AppxPackage *windowsstore* | Remove-AppxPackage
+# Uninstall Sports:
+Get-AppxPackage *bingsports* | Remove-AppxPackage
+# Uninstall Voice Recorder:
+Get-AppxPackage *soundrecorder* | Remove-AppxPackage
+# Uninstall Weather:
+Get-AppxPackage *bingweather* | Remove-AppxPackage
+# Uninstall Windows Feedback:
+This app can't be removed.
+# Uninstall Xbox:
+Get-AppxPackage *xboxapp* | Remove-AppxPackage
