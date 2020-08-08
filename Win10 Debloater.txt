@@ -1,9 +1,9 @@
 Windows Powershell Commands
 
-# Run to check the bloatware in your Win10 system
+# Run to check the bloatware in your Win10 Powershell Command
 DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
 
-# Copy to remove all bloatware below
+# Copy to remove all bloatware below, do check the bloatware version using the select string command if directly copying the command doesn’t work.
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AppUp.IntelGraphicsExperience_1.100.2727.0_neutral_~_8j3eq9eme6ctt
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:ICEpower.AudioWizard_1.5.28.0_neutral_~_dxp88312j1fgj
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.25.20211.0_neutral_~_8wekyb3d8bbwe
